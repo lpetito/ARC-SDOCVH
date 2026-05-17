@@ -1,4 +1,12 @@
-^gwtgsdohclusters\.Rproj$
+^data-raw$
+^README\.Rmd$
+^pkgdown$
+^docs$
+^\.github$
+^\.git$
+^\.gitignore$
 ^\.Rproj\.user$
+^.*\.Rproj$
+^LICENSE\.md$
 ^\.positai$
 ^\.claude$

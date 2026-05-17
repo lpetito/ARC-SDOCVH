@@ -1,0 +1,27 @@
+position,variable,type,description,source
+1,ZIPCODE,character,"Five-digit ZIP code or ZIP Code Tabulation Area identifier, stored as a character variable with leading zeros preserved.",Package processing step
+2,ACS_PCT_FOREIGN_BORN_ZC,numeric,Percentage of population that is foreign-born (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+3,ACS_PCT_BLACK_ZC,numeric,Percentage of population reporting Black or African American race alone (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+4,ACS_PCT_ASIAN_ZC,numeric,Percentage of population reporting Asian race alone (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+5,ACS_PCT_WHITE_ZC,numeric,Percentage of population reporting White race alone (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+6,ACS_PCT_HISPANIC_ZC,numeric,Percentage of population reporting Hispanic ethnicity (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+7,ACS_PCT_ENGLISH_ZC,numeric,"Percentage of population that only speaks English (ages 5 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+8,ACS_PCT_OWNER_HU_ZC,numeric,Percentage of occupied housing units: owner-occupied (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+9,ACS_PCT_IN_COUNTY_MOVE_ZC,numeric,"Percentage of population that moved within the same county in the past year (age 1 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+10,ACS_TOT_HU_ZC,numeric,Total housing units (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+11,ACS_PCT_COMMT_15MIN_ZC,numeric,"Percentage of workers with < 15-minute commute time (ages 16 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+12,ACS_PCT_COMMT_29MIN_ZC,numeric,"Percentage of workers with 15- to 29-minute commute time (ages 16 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+13,POS_DIST_ED_ZP,numeric,"Distance in miles to the nearest emergency department, calculated using population weighted ZIP centroids","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+14,ACS_PCT_MEDICAID_ANY_ZC,numeric,Percentage of population with any Medicaid/means-tested public health insurance coverage (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+15,ACS_MEDIAN_HH_INC_ZC,numeric,"Median household income (dollars, inflation-adjusted to data file year, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+16,ACS_PCT_LT_HS_ZC,numeric,"Percentage of population with less than high school education (ages 25 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+17,ACS_PCT_BACHELOR_DGR_ZC,numeric,"Percentage of population with a bachelor's degree (ages 25 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+18,ACS_PCT_HEALTH_INC_BELOW137_ZC,numeric,"Percentage of population under 1.37 of the poverty threshold (relevant for health insurance coverage, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+19,ACS_PCT_UNEMPLOY_ZC,numeric,"Percentage of civilian labor force that is unemployed (ages 16 and over, ZCTA level)","SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+20,ACS_GINI_INDEX_ZC,numeric,Gini index of income inequality (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+21,ACS_PCT_HH_PUB_ASSIST_ZC,numeric,Percentage of households with public assistance income or food stamps/SNAP (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+22,ACS_PCT_HH_NO_INTERNET_ZC,numeric,Percentage of households with no internet access (ZCTA level),"SDOH_2020_ZIPCODE_1_0.xlsx, Layout sheet"
+23,TOTALPRESVOTES,numeric,Total presidential votes at the ZIP-code level.,Project-specific ZIP-level contextual source
+24,crime_rate_per_100000,numeric,"Crime rate per 100,000 population at the ZIP-code level.",Project-specific ZIP-level contextual source
+25,cluster_kmeans,factor,"Final K-means cluster assignment from standardized ZIP-level cardiovascular-related SDOH features. Factor levels are 1, 2, 3, and 4.",Final project K-means model
+26,assigned_prob_kmeans,numeric,Distance-based assigned-cluster confidence score from the final K-means model. This is not a model-based posterior probability.,Final project K-means model

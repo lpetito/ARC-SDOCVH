@@ -1,0 +1,11 @@
+utils::globalVariables(
+  c(
+    ".data",
+    "df_zip_cluster_kmeans_cv",
+    "cluster_kmeans",
+    "ZIPCODE",
+    "burden_sdoh",
+    "geometry",
+    "STUSPS"
+  )
+)
