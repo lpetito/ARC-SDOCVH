@@ -1,9 +1,9 @@
-# gwtgsdohclusters
+# ARCSDOCVH
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-`gwtgsdohclusters` provides ZIP-level cardiovascular-related social determinants of health (SDOH) cluster assignments for U.S. ZIP/ZCTA areas.
+`ARCSDOCVH` provides ZIP-level cardiovascular-related social determinants of health (SDOH) cluster assignments for U.S. ZIP/ZCTA areas.
 
 The main dataset is `df_zip_cluster_kmeans_cv`, which contains ZIP-level contextual variables, final K-means cluster assignments, and a distance-based assigned-cluster confidence score.
 
@@ -11,7 +11,7 @@ The package is designed as a small data package. It allows users to load the fin
 
 ## Installation
 
-You can install the development version of `gwtgsdohclusters` from GitHub with:
+You can install the development version of `ARCSDOCVH` from GitHub with:
 
 ```r
 # install.packages("remotes")
@@ -21,7 +21,7 @@ remotes::install_github("lpetito/ARC-SDOCVH")
 ## Load the package
 
 ```r
-library(gwtgsdohclusters)
+library(ARCSDOCVH)
 ```
 
 ## Main dataset
@@ -78,7 +78,7 @@ A CSV version is also installed with the package:
 system.file(
   "extdata",
   "sdoh_zip_clusters_dictionary.csv",
-  package = "gwtgsdohclusters"
+  package = "ARCSDOCVH"
 )
 ```
 

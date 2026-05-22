@@ -14,7 +14,7 @@ supplemental_table_file <- function() {
   system.file(
     "extdata",
     "SuppTable1.xlsx",
-    package = "gwtgsdohclusters",
+    package = "ARCSDOCVH",
     mustWork = TRUE
   )
 }

@@ -13,7 +13,7 @@ cluster_map_file <- function() {
   system.file(
     "extdata",
     "cluster_map_us_inset.png",
-    package = "gwtgsdohclusters",
+    package = "ARCSDOCVH",
     mustWork = TRUE
   )
 }
