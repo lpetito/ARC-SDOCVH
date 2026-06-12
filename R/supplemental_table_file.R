@@ -1,7 +1,7 @@
 #' Get file path to Supplemental Table 1
 #'
 #' Returns the installed file path for the Excel file containing Supplemental
-#' Table 1, which describes the variables included in creation of the burden of
+#' Table 1, which describes the variables included in creation of the
 #' cardiovascular-related SDOH clusters.
 #'
 #' @return Character string giving the file path to `SuppTable1.xlsx`.

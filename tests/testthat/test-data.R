@@ -12,13 +12,18 @@ test_that("ZIPCODE is stored as five-character string", {
   expect_true(all(nchar(df_zip_cluster_kmeans_cv$ZIPCODE) == 5))
 })
 
-test_that("burden labels are created correctly", {
+test_that("cluster labels are created correctly", {
   dat <- get_cluster_data()
 
   expect_true("burden_sdoh" %in% names(dat))
   expect_equal(
     levels(dat$burden_sdoh),
-    c("Low", "Moderate", "High", "Very High")
+    c(
+      "Resourced",
+      "Rural Isolated",
+      "Urban Diverse",
+      "Concentrated Disadvantage"
+    )
   )
 })
 

@@ -11,7 +11,7 @@ Character string giving the file path to \code{cluster_map_us_inset.png}.
 }
 \description{
 Returns the installed file path for the pre-generated PNG map of ZIP-level
-cardiovascular-related SDOH burden clusters.
+cardiovascular-related SDOH clusters.
 }
 \examples{
 cluster_map_file()

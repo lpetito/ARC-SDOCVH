@@ -6,8 +6,8 @@
 #'
 #' The final K-means model used four clusters. The raw cluster labels are stored
 #' in `cluster_kmeans`. For substantive interpretation, use the following mapping:
-#' cluster 2 = Low burden, cluster 1 = Moderate burden, cluster 4 = High burden,
-#' and cluster 3 = Very high burden.
+#' cluster 2 = Resourced, cluster 1 = Rural Isolated, cluster 4 = Urban Diverse,
+#' and cluster 3 = Concentrated Disadvantage.
 #'
 #' @format A tibble with 41,117 rows and 26 variables:
 #' \describe{

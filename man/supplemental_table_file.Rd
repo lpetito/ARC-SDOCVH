@@ -11,7 +11,7 @@ Character string giving the file path to \code{SuppTable1.xlsx}.
 }
 \description{
 Returns the installed file path for the Excel file containing Supplemental
-Table 1, which describes the variables included in creation of the burden of
+Table 1, which describes the variables included in creation of the
 cardiovascular-related SDOH clusters.
 }
 \examples{

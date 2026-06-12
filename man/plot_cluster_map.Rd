@@ -2,13 +2,13 @@
 % Please edit documentation in R/plot_cluster_map.R
 \name{plot_cluster_map}
 \alias{plot_cluster_map}
-\title{Plot ZIP-level cardiovascular-related SDOH burden clusters}
+\title{Plot ZIP-level cardiovascular-related SDOH clusters}
 \usage{
 plot_cluster_map(data = get_cluster_data(), include_insets = TRUE)
 }
 \arguments{
 \item{data}{A data frame containing \code{ZIPCODE} and either \code{burden_sdoh} or
-\code{cluster_kmeans}. Defaults to the package dataset with burden labels.}
+\code{cluster_kmeans}. Defaults to the package dataset with cluster labels.}
 
 \item{include_insets}{Logical. If \code{TRUE}, returns a mainland map with Alaska
 and Hawaii manually positioned as insets. If \code{FALSE}, returns a contiguous
@@ -18,7 +18,7 @@ U.S. map only.}
 A ggplot object.
 }
 \description{
-Recreates the U.S. map of ZIP/ZCTA-level cardiovascular-related SDOH burden
+Recreates the U.S. map of ZIP/ZCTA-level cardiovascular-related SDOH
 clusters using 2020 Census ZCTA boundaries from \code{tigris}.
 }
 \examples{

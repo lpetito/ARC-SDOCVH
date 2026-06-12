@@ -1,7 +1,7 @@
 #' Get file path to the pre-generated cluster map
 #'
 #' Returns the installed file path for the pre-generated PNG map of ZIP-level
-#' cardiovascular-related SDOH burden clusters.
+#' cardiovascular-related SDOH clusters.
 #'
 #' @return Character string giving the file path to `cluster_map_us_inset.png`.
 #'

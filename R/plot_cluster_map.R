@@ -1,10 +1,10 @@
-#' Plot ZIP-level cardiovascular-related SDOH burden clusters
+#' Plot ZIP-level cardiovascular-related SDOH clusters
 #'
-#' Recreates the U.S. map of ZIP/ZCTA-level cardiovascular-related SDOH burden
+#' Recreates the U.S. map of ZIP/ZCTA-level cardiovascular-related SDOH
 #' clusters using 2020 Census ZCTA boundaries from `tigris`.
 #'
 #' @param data A data frame containing `ZIPCODE` and either `burden_sdoh` or
-#'   `cluster_kmeans`. Defaults to the package dataset with burden labels.
+#'   `cluster_kmeans`. Defaults to the package dataset with cluster labels.
 #' @param include_insets Logical. If `TRUE`, returns a mainland map with Alaska
 #'   and Hawaii manually positioned as insets. If `FALSE`, returns a contiguous
 #'   U.S. map only.
@@ -47,7 +47,12 @@ plot_cluster_map <- function(data = get_cluster_data(), include_insets = TRUE) {
         burden_sdoh = factor(
           as.character(cluster_kmeans),
           levels = c("2", "1", "4", "3"),
-          labels = c("Low", "Moderate", "High", "Very High")
+          labels = c(
+            "Resourced",
+            "Rural Isolated",
+            "Urban Diverse",
+            "Concentrated Disadvantage"
+          )
         )
       )
   }
@@ -57,7 +62,12 @@ plot_cluster_map <- function(data = get_cluster_data(), include_insets = TRUE) {
       ZIPCODE = stringr::str_pad(as.character(ZIPCODE), width = 5, side = "left", pad = "0"),
       burden_sdoh = factor(
         burden_sdoh,
-        levels = c("Low", "Moderate", "High", "Very High")
+        levels = c(
+          "Resourced",
+          "Rural Isolated",
+          "Urban Diverse",
+          "Concentrated Disadvantage"
+        )
       )
     ) |>
     dplyr::select(ZIPCODE, burden_sdoh)
@@ -100,9 +110,9 @@ plot_cluster_map <- function(data = get_cluster_data(), include_insets = TRUE) {
           expand = FALSE
         ) +
         ggplot2::labs(
-          title = "Geographic distribution of burden of cardiovascular-related SDOH",
-          subtitle = "Burden groups assigned from ZIP-level SDOH features",
-          fill = "Burden of CV-related SDOH"
+          title = "Geographic distribution of cardiovascular-related SDOH clusters",
+          subtitle = "Clusters assigned from ZIP-level SDOH features",
+          fill = "CV-related SDOH cluster"
         ) +
         ggplot2::theme_minimal() +
         ggplot2::theme(
@@ -145,9 +155,9 @@ plot_cluster_map <- function(data = get_cluster_data(), include_insets = TRUE) {
       expand = FALSE
     ) +
     ggplot2::labs(
-      title = "Geographic distribution of burden of cardiovascular-related SDOH",
-      subtitle = "Burden groups assigned from ZIP-level SDOH features",
-      fill = "Burden of CV-related SDOH"
+      title = "Geographic distribution of cardiovascular-related SDOH clusters",
+      subtitle = "Clusters assigned from ZIP-level SDOH features",
+      fill = "CV-related SDOH cluster"
     ) +
     ggplot2::guides(fill = ggplot2::guide_legend(nrow = 1, byrow = TRUE)) +
     ggplot2::theme_minimal() +

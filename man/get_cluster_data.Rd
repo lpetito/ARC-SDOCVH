@@ -2,13 +2,14 @@
 % Please edit documentation in R/get_cluster_data.R
 \name{get_cluster_data}
 \alias{get_cluster_data}
-\title{Get ZIP-level SDOH cluster data with optional burden labels}
+\title{Get ZIP-level SDOH cluster data with optional cluster labels}
 \usage{
 get_cluster_data(labeled = TRUE)
 }
 \arguments{
 \item{labeled}{Logical. If \code{TRUE}, add \code{burden_sdoh}, where cluster 2 is
-Low, cluster 1 is Moderate, cluster 4 is High, and cluster 3 is Very High.}
+Resourced, cluster 1 is Rural Isolated, cluster 4 is Urban Diverse, and
+cluster 3 is Concentrated Disadvantage.}
 }
 \value{
 A tibble containing ZIP-level SDOH variables and K-means cluster
@@ -16,7 +17,7 @@ assignments.
 }
 \description{
 Returns the package dataset \code{df_zip_cluster_kmeans_cv}, optionally adding
-the substantive SDOH burden label used in the project analysis.
+the substantive SDOH cluster label used in the project analysis.
 }
 \examples{
 dat <- get_cluster_data()

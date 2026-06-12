@@ -44,9 +44,9 @@ dim(df_zip_cluster_kmeans_cv)
 head(df_zip_cluster_kmeans_cv)
 ```
 
-## Get cluster data with burden labels
+## Get cluster data with interpreted cluster labels
 
-The helper function `get_cluster_data()` returns the main dataset and adds the interpreted SDOH burden label.
+The helper function `get_cluster_data()` returns the main dataset and adds the interpreted cardiovascular-related SDOH cluster label.
 
 ```r
 dat <- get_cluster_data()
@@ -57,12 +57,12 @@ table(dat$burden_sdoh)
 
 The raw K-means cluster labels are mapped as follows:
 
-| K-means cluster | SDOH burden label |
-|---:|:---|
-| 2 | Low |
-| 1 | Moderate |
-| 4 | High |
-| 3 | Very High |
+| K-means cluster | Cluster label | SDOH burden level | Description |
+|---:|:---|:---|:---|
+| 2 | Resourced | Low | Affluent, urban/suburban, racially diverse; highest income and education |
+| 1 | Rural Isolated | Moderate | Rural, low-density, predominantly White; mid-SES, longest distance to nearest ED |
+| 4 | Urban Diverse | High | Urban, highly multiethnic with Hispanic/foreign-born predominance; lower-income, highest crime |
+| 3 | Concentrated Disadvantage | Very high | Urban, Black-predominant; highest deprivation, unemployment, and lack of internet access |
 
 ## Data dictionary
 
@@ -84,7 +84,7 @@ system.file(
 
 ## Supplemental table
 
-The package includes an Excel version of Supplemental Table 1, which describes the variables included in creation of the burden of cardiovascular-related SDOH clusters.
+The package includes an Excel version of Supplemental Table 1, which describes the variables included in creation of the cardiovascular-related SDOH clusters.
 
 ```r
 supplemental_table_file()
